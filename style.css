@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue; 
+    color: #929af3;
+}
+
+header {
+    background-color: rgb(181, 135, 222); 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: aliceblue; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+}
+
+.profile-img {
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border:3px cadetblue;
+}
+
+.content::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.hobby-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hobby-item {
+    width: 200px;
+    text-align: center;
+}
+
+.hobby-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border:2px darksalmon;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    color: darksalmon;
+    background-color: antiquewhite;
+    margin-top: 30px;
+}
